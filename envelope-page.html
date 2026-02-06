@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Envelope Animation</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      overflow: hidden;
-    }
-    #lottie {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-</head>
-<body>
-  <div id="lottie"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envelope Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="envelope">
+    
+        <!-- BACK -->
+        <img
+          src="https://f.nooncdn.com/noon-cdn/s/app/com/noon/kinetics/Ramadan/v1.0/envelope-back.png"
+          class="envelope-back"
+        />
+    
+        <img
+          src="./stamp.png"
+          class="stamp"
+        />
+        
+        <!-- FRONT -->
+        <img
+          src="https://f.nooncdn.com/noon-cdn/s/app/com/noon/kinetics/Ramadan/v1.0/envelope-front.png"
+          class="envelope-front"
+        />
+    
 
-  <!-- Lottie Web Player -->
-  <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
-
-  <script>
-    lottie.loadAnimation({
-      container: document.getElementById('lottie'),
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'https://salmakhorshed.github.io/test/envelope_opt.json' 
-    });
-  </script>
-</body>
+        <div class="flap-wrapper">
+          <img
+            src="https://f.nooncdn.com/noon-cdn/s/app/com/noon/kinetics/Ramadan/v1.0/envelope-top-2.png"
+            class="envelope-flap"
+          />
+    
+          <img
+            src="https://f.nooncdn.com/noon-cdn/s/app/com/noon/kinetics/Ramadan/v1.0/quest.png"
+            class="quest-badge"
+          />
+        </div>
+    
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
